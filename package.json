@@ -1,7 +1,7 @@
 {
   "name": "forge-language-support",
-  "displayName": "Forge Language Suppot",
-  "description": "this extenstion set grammer and keywords for the forge file.",
+  "displayName": "Forge Language Support",
+  "description": "This extension sets grammar and keywords for the Forge file.",
   "version": "0.0.1",
   "publisher": "toastsandwich",
   "engines": {
@@ -14,13 +14,17 @@
     "languages": [{
       "id": "forge",
       "aliases": ["Forge", "forge"],
-      "extensions": [".forge",".frg"],
+      "extensions": [".forge", ".frg"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
       "language": "forge",
-      "scopeName": "source.toml",
+      "scopeName": "source.forge",
       "path": "./syntaxes/forge.tmLanguage.json"
     }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forge-Code-Generator/forge-language-support"
   }
 }
