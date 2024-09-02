@@ -1,0 +1,41 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Forge",
+	"patterns": [
+		{
+			"include": "#sections"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"sections": {
+			"patterns": [{
+				"name": "entity.name.section.forge",
+				"match": "\\[(credentials|code)\\]"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.forge",
+				"match": "\\b(username|password|domain|filename|description|location)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.forge",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.forge",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.forge"
+}

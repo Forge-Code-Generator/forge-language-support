@@ -1,0 +1,26 @@
+{
+  "name": "forge-language-support",
+  "displayName": "Forge Language Suppot",
+  "description": "this extenstion set grammer and keywords for the forge file.",
+  "version": "0.0.1",
+  "publisher": "toastsandwich",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "forge",
+      "aliases": ["Forge", "forge"],
+      "extensions": [".forge",".frg"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "forge",
+      "scopeName": "source.toml",
+      "path": "./syntaxes/forge.tmLanguage.json"
+    }]
+  }
+}
